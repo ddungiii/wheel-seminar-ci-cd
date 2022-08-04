@@ -1,0 +1,24 @@
+{
+  "name": "ddungiii-npm-ci-cd",
+  "version": "1.0.0",
+  "description": "Wheel seminar for npm ci, cd with Github Actions",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddungiii/wheel-seminar-ci-cd.git"
+  },
+  "author": "Giyeong Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddungiii/wheel-seminar-ci-cd/issues"
+  },
+  "homepage": "https://github.com/ddungiii/wheel-seminar-ci-cd#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
