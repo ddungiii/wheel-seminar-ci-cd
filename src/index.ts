@@ -7,11 +7,11 @@ enum Role {
 
 export default function getRole(nickname: string): Role {
   switch (nickname) {
-    case "platypus":
+    case 'platypus':
       return Role.President;
-    case "dora":
+    case 'dora':
       return Role.VicePresident;
-    case "jeuk":
+    case 'jeuk':
       return Role.Member;
     default:
       return Role.Unknown;
