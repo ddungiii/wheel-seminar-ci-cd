@@ -13,10 +13,13 @@ jobs:
 
        # Use this GitHub Action
       - name: Check package version
-        uses: technote-space/package-version-check-action@v1
-        with:
-          COMMIT_DISABLED: 1
-          
+        uses: PostHog/check-package-version@v2
+
+      - name: Echo versions
+        run: |
+          echo "Committed version: ${{ steps.cpv.outputs.committed-version }}"
+          echo "Published version: ${{ steps.cpv.outputs.published-version }}"
+
       - uses: actions/setup-node@v3
         with:
           node-version: 16
